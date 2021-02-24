@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="content-language" content="es">
+
+
+	<title>Mi sitio web</title>
+	<meta name="description" content="Mi sitio web">
+	<meta name="keywords" content="sitio, web">
+
+	<link rel="index" href="./" title="Inicio">
+
+
+	<style>
+		html,
+		body,
+		div,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		article,
+		aside,
+		canvas,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		output,
+		ruby,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		/* HTML5 reset para antiguos browsers */
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section {
+			display: block;
+		}
+
+		body {
+			line-height: 1;
+		}
+
+		ol,
+		ul {
+			list-style: none;
+		}
+
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0
+		}
+
+		/*Acaba el reset */
+
+		body {
+			font-size: 16px;
+			font-family: Georgia, "Times New Roman", Times, serif;
+			color: #444;
+			background-color: #CCC;
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin-bottom: .5em;
+			font-weight: bold;
+		}
+
+		h1 {
+			font-size: 200%;
+			padding-left: 8px;
+			padding-top: .5em;
+		}
+
+		h1#logo {
+
+			padding-left: 30px;
+
+		}
+
+		h2 {
+			display: block;
+			font-size: 150%;
+			margin: 1em 16px;
+			border-bottom: 1px solid #d9d9d9;
+			color: #A0A0A0;
+			text-shadow: 1px 1px 1px #ccc;
+
+		}
+
+		h3 {
+			font-size: 100%;
+		}
+
+		p,
+		h3 {
+			padding: .5em;
+			padding-bottom: 0;
+			line-height: 1.5
+		}
+
+		header {
+			background-color: #888;
+			color: white;
+			margin-bottom: 1em;
+		}
+
+		#container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0;
+			background-color: white;
+			box-shadow: 0px 0px 7px 1px #888;
+		}
+
+		#container .row {
+			margin: 0;
+			padding: 0.5em;
+		}
+
+		header nav {
+			background-color: #222;
+			margin: 0;
+			padding: 1em;
+		}
+
+		header nav a {
+
+			list-style: none;
+			width: 25%;
+			margin: 0;
+			padding: 1em;
+			color: white;
+			text-decoration: none;
+		}
+
+		header nav a:hover {
+			color: #ddd;
+		}
+
+		header nav:after,
+		.row:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+
+		#contenido {
+			margin: 0;
+			padding: 0;
+		}
+
+		#contenido article {
+			float: left;
+			width: 45%;
+			padding: .5em;
+			margin: 0.2em;
+		}
+
+		#contenido article div {
+			border: 1px solid #d9d9d9;
+			padding-bottom: 1em;
+		}
+
+		.text p {
+			padding: 0 1em 2em 1em;
+		}
+
+		img {
+			width: 40%;
+			margin: 0em 0.5em 0em 0em;
+			float: left;
+		}
+
+		.imaxe img {
+			width: 100%;
+			margin: 0.2em 0em 0.2em 0em;
+		}
+
+		footer {
+			max-width: 960px;
+			min-height: 50px;
+			margin: 0 auto;
+			padding: 0;
+			padding: 0.5em 1em;
+			color: #efefef;
+			font-size: 80%;
+			font-style: italic;
+		}
+
+		@media only screen and (max-width:768px) and (min-width:481px) {
+			#contenido article {
+				width: 50%;
+				padding-bottom: 0
+			}
+			#contenido article div {
+				height: 190px;
+			}
+			header nav li {
+				font-size: 80%
+			}
+		}
+
+		@media only screen and (max-width:480px) {
+			#contenido article {
+				width: 100%;
+				padding-bottom: 0;
+			}
+			h2 {
+				font-size: 130%;
+			}
+			header nav li {
+				float: none;
+				width: 100%;
+				border-bottom: 1px solid #777;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<h1 id="logo">Lorem ipsum</h1>
+			<nav>
+				<a href="#">Hola</a>
+				<a href="#">Mundo</a>
+				<a href="#">Aquí</a>
+				<a href="#">Estoy</a>
+			</nav>
+		</header>
+		<section id="contenido">
+			<h2>Lorem ipsum</h2>
+			<div class="row">
+				<article>
+					<div>
+						<h3>Lorem ipsum</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in purus semper, euismod ligula ut, viverra sapien. Morbi sollicitudin vitae ante malesuada scelerisque. Fusce vitae nisi sit amet dui tempor pretium vel id ante. Fusce facilisis fermentum sapien, et finibus sapien bibendum sed. </p>
+						<figure class="imaxe">
+							<img src="imagenes/berries.jpg">
+						</figure>
+					</div>
+				</article>
+				
+				<article>
+					<div>
+						<h3>Lorem ipsum</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in purus semper, euismod ligula ut, viverra sapien. Morbi sollicitudin vitae ante malesuada scelerisque. Fusce vitae nisi sit amet dui <img src="imagenes/blueberries.jpg">tempor pretium vel id ante. Fusce facilisis fermentum sapien, et finibus sapien bibendum sed. Nulla in accumsan odio, nec blandit quam. Nullam sed tortor iaculis, mollis ligula et, mollis ipsum. Nunc tristique semper ante, vitae suscipit orci placerat eget. </p>
+					</div>
+					<div class="imaxe">
+						<img src="imagenes/berries.jpg"></div>
+				</article>
+			</div>
+		</section>
+		<section class="text">
+			<h2>Lorem ipsum</h2>
+			<p><span>&#35;</span>Hola <span>&#35;</span>Tengo hambre <span>&#35;</span>Saca la mascarilla! <span>&#35;</span>Tengo hambre <span>&#35;</span>Saca la mascarilla!
+			</p>
+
+		</section>
+	</div>
+	<footer>&copy;2021</footer>
+</body>
+
+</html>

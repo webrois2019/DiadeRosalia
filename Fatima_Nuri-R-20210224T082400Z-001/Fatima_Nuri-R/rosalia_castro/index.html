@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Rosalía_Castro</title>
+	<style type="text/css">
+
+	@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+
+	@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
+		body {
+			font-size: 18px;
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Truculenta', sans-serif;
+		}
+
+		/** {
+			margin: 0.1em;
+			padding: 0.5em;
+		}*/
+
+		#main {
+			min-height: 500px;
+			margin: 0.1em;
+			padding: 0.5em;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row;
+			flex-flow: row;
+			width: 98%;
+
+		}
+
+		#main>nav {
+
+			border-radius: 0pt;
+			-webkit-order: 1;
+			order: 1;
+			display: block;
+			padding: 0.5em;
+			margin: 0.1em;
+			width:15%;
+
+		}
+
+		#main>section {
+
+			-webkit-flex: 70%;
+			flex: 70%;
+			-webkit-order: 2;
+			order: 2;
+			padding: 0.5em;
+			margin-top: 0.5em;
+			box-shadow: 0px 0px 4px 4px pink;
+			border-radius: 1em;
+
+		}
+
+		header {
+			border-radius: 7pt;
+			margin: 0px !important;
+			padding: 0px !important;	
+			text-align: center;
+		}
+
+		header img{
+			width: 98%;border-radius: 1em;
+			box-shadow: 5px 5px 5px pink;
+			border:0px;
+		}
+
+
+		h1,
+		h2,
+		h3 {
+
+			font-weight: 900;
+			font-family: 'Qwigley', cursive;
+		}
+
+		.img1{
+				float: right;
+				width: 18%;
+				margin:1em;
+			}
+
+		/*section div {
+			padding: 0.5em;
+			margin: 0.1em;
+			border: 2px solid #000;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 1em;
+
+		}
+		*/
+
+		/*section div div {
+			padding: 0.5em;
+			margin: 0.1em;m;
+			border: 2px solid blue;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 0.7em;
+
+		}*/
+
+		section>p {
+			font-size: 1em;
+			margin: 1.5em 0.5em 0em 0.5em;
+
+		}
+
+		section>a{
+			float: right;
+			margin-right: 1em;
+			margin-top: 8em;
+		}
+
+		.capitular{
+				text-transform: capitalize;
+				color: #a027f4;
+				font-family: 'Qwigley', cursive;
+				font-size: 5em;
+				line-height: 0.3em;
+			}
+
+
+		/*div>p {
+			font-weight: bold;
+			color: midnightblue
+		}*/
+
+		/* Demasiado estrecho para soportar tres columnas? */
+
+		@media all and (max-width: 640px) {
+
+			#main {
+				-webkit-flex-flow: column;
+				flex-flow: column;
+
+			}
+
+			#main>nav,
+			header,{
+				min-height: 50px;
+				max-height: 50px;
+			}
+
+			#main>section,
+			#main>nav,
+		}
+
+		
+		#main nav a {
+			padding: 0.5em;
+			margin: 0.5em;
+			background: #deb6fb;
+			border: outset pink;
+			font-size: 1em;
+			display: block;
+			color: #000;
+			text-decoration: none;
+			border-radius: 1em;
+
+		}
+
+
+		#main nav a:hover {
+			margin: 0.2em;
+			padding: 0.6em;
+			background: pink;
+			color: black;
+			border-radius:7pt;
+			border: 5px ridge pink;
+
+		}
+
+
+		.negrita{
+			font-weight: bold;
+		}
+
+		.cursiva{
+			font-style: italic;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="imagenes/cabecera2.png">
+	</header>
+	<div id="main">
+		<section>
+			
+			<p> <span class="capitular">M</span>aría Rosalía Rita de Castro (<span class="cursiva">Santiago de Compostela, 24 de febreiro de 1837-Padrón, 15 de xullo de 1885</span>) foi unha <span class="negrita"> poetisa e novelista española</span> que escribiu tanto en galego como en castelán. Considerada entre os <span class="negrita">grandes poetas da literatura española do século XIX</span>,​ representa xunto con Eduardo Pondal e Curros Enríquez unha das <span class="negrita">figuras emblemáticas do  Rexurdimento galego.</span></p> 
+			<img class="img1" src="imagenes/foto_rosalia.jpg">
+			<p>Non só pola súa achega literaria en xeral e polo feito de que os seus <span class="cursiva">"Cantares Galegos​"</span> sexan entendidos como a <span class="negrita">primeira gran obra da literatura galega contemporánea</span>, senón polo proceso de  sacralización ao que foi sometida e que acabou por convertela en <span class="negrita">símbolo do pobo galego.​</span> Ademais, é considerada xunto con <span class="cursiva">Gustavo Adolfo Bécquer</span> a <span class="negrita">precursora da poesía española moderna.</span></p>
+			<a href="biografia.html">...Saber máis</a>
+			
+		</section>
+	
+			<nav>
+				<a href="index.html"><img src="imagenes/flor_menu2.png"> Inicio</a>
+				<a href="biografia.html"><img src="imagenes/flor_menu2.png"> Biografía</a>
+				<a href="obras.html"><img src="imagenes/flor_menu2.png"> Principais obras</a>
+				<a href="meritos.html"><img src="imagenes/flor_menu2.png"> Outros méritos</a>
+				<a href="citas.html"><img src="imagenes/flor_menu2.png"> Citas e frases</a>
+				<a href="galeria.html"><img src="imagenes/flor_menu2.png"> Galería</a>
+			</nav>
+		
+	</div>
+</body>
+
+</html>

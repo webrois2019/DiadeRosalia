@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Rosalía_Castro</title>
+	<style type="text/css">
+
+	@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+
+	@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
+		body {
+			font-size: 18px;
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Truculenta', sans-serif;
+		}
+
+		/** {
+			margin: 0.1em;
+			padding: 0.5em;
+		}*/
+
+		#main {
+			min-height: 500px;
+			margin: 0.1em;
+			padding: 0.5em;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row;
+			flex-flow: row;
+			width: 98%;
+
+		}
+
+		#main>nav {
+
+			border-radius: 7pt;
+			-webkit-order: 1;
+			order: 1;
+			display: block;
+			padding: 0.5em;
+			margin: 0.1em;
+			width:15%;
+
+		}
+
+		#main>section {
+
+			-webkit-flex: 70%;
+			flex: 70%;
+			-webkit-order: 2;
+			order: 2;
+			padding: 0.5em;
+			margin-top: 0.5em;
+			box-shadow: 0px 0px 4px 4px pink;
+			border-radius: 1em;
+
+		}
+
+		header {
+			border-radius: 7pt;
+			margin: 0px !important;
+			padding: 0px !important;	
+			text-align: center;
+		}
+
+		header img{
+			width: 98%;border-radius: 1em;
+			box-shadow: 5px 5px 5px pink;
+			border:0px;
+		}
+
+		#main nav a {
+			padding: 0.5em;
+			margin: 0.5em;
+			background: #deb6fb;
+			border: outset pink;
+			font-size: 1em;
+			display: block;
+			color: #000;
+			text-decoration: none;
+			border-radius: 1em;
+
+		}
+
+
+		#main nav a:hover {
+			margin: 0.2em;
+			padding: 0.6em;
+			background: pink;
+			color: black;
+			border-radius:7pt;
+			border: 5px ridge pink;
+
+		}
+		h1,
+		h2,
+		h3 {
+
+			font-weight: 900;
+			font-size: 2.5em;
+			margin-top: 0em;
+			font-family: 'Qwigley', cursive;
+		}
+
+		/*section div {
+			padding: 0.5em;
+			margin: 0.1em;
+			border: 2px solid #000;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 1em;
+
+		}
+		*/
+
+		/*section div div {
+			padding: 0.5em;
+			margin: 0.1em;m;
+			border: 2px solid blue;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 0.7em;
+
+		}*/
+
+		section>p {
+			font-size: 1.5em;
+			margin: 1.5em 0.5em 0em 0.5em;
+
+		}
+
+	
+
+		/*div>p {
+			font-weight: bold;
+			color: midnightblue
+		}*/
+
+		/* Demasiado estrecho para soportar tres columnas? */
+
+		@media all and (max-width: 640px) {
+
+			#main {
+				-webkit-flex-flow: column;
+				flex-flow: column;
+
+			}
+
+			#main>nav,
+			header,{
+				min-height: 50px;
+				max-height: 50px;
+			}
+
+			#main>section,
+			#main>nav,
+		}
+
+
+			/*Estilos de la galeria*/
+
+		.galeria {
+			width: 80%;
+			margin: auto;
+			list-style: none;
+			padding: 40px;
+			box-sizing: border-box;
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.galeria li {
+			margin: 5px;
+		}
+
+		.galeria img {
+			width: 150px;
+			height: 100px;
+		}
+
+		/*Estilos del modal*/
+
+		.modal {
+			display: none;
+		}
+
+		.modal:target {
+
+			display: block;
+			position: fixed;
+			background: rgba(0, 0, 0, 0.8);
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.modal h3 {
+			color: pink;
+			text-align: center;
+			font-size: 40px;
+			margin: 10px 0;
+			font-family:'Truculenta', sans-serif;
+		
+		}
+
+		.imagen {
+			width: 100%;
+			height: 50%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.imagen a {
+			color: pink;
+			font-size: 40px;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+
+		.imagen a:nth-child(2) {
+			margin: 0;
+			height: 100%;
+			flex-shrink: 2;
+		}
+
+		.imagen img {
+			width: 700px;
+			height: 150%;
+			max-width: 100%;
+			border: 7px solid #fff;
+			box-sizing: border-box;
+			border-radius: 0.5em;
+		}
+
+		.cerrar {
+			display: block;
+			background: #fff;
+			width: 25px;
+			height: 25px;
+			margin: 155px auto;
+			text-align: center;
+			text-decoration: none;
+			font-size: 25px;
+			color: #000;
+			padding: 5px;
+			border-radius: 50%;
+			line-height: 25px;
+		}
+
+
+		
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="imagenes/cabecera2.png">
+	</header>
+	<div id="main">
+		<section>
+			
+			<h1>Monumentos a Rosalía de Castro</h1>
+
+			<ul class="galeria">
+				<li><a href="#img1"><img src="imagenes/4.jpg"></a></li>
+				<li><a href="#img2"><img src="imagenes/1.jpg"></a></li>
+				<li><a href="#img3"><img src="imagenes/2.jpg"></a></li>
+				<li><a href="#img4"><img src="imagenes/13.jpg"></a></li>
+				<li><a href="#img5"><img src="imagenes/14.jpg"></a></li>
+				<li><a href="#img6"><img src="imagenes/8.jpg"></a></li>
+				<li><a href="#img7"><img src="imagenes/16.jpg"></a></li>
+				<li><a href="#img8"><img src="imagenes/15.jpg"></a></li>
+			</ul>
+
+			<div class="modal" id="img1">
+				<h3>Paseo do Espolón - Padrón</h3>
+				<div class="imagen">
+					<a href="#img4">&#60;</a>
+					<a href="#img2"><img src="imagenes/4.jpg"></a>
+					<a href="#img2">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img2">
+				<h3>Paseo de la Herradura - Parque da Alameda de Santiago</h3>
+				<div class="imagen">
+					<a href="#img1">&#60;</a>
+					<a href="#img3"><img src="imagenes/1.jpg"></a>
+					<a href="#img3">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img3">
+				<h3>Alameda de Santiago de Compostela</h3>
+				<div class="imagen">
+					<a href="#img2">&#60;</a>
+					<a href="#img4"><img src="imagenes/2.jpg"></a>
+					<a href="#img4">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img4">
+				<h3>Escultura - Vigo</h3>
+				<div class="imagen">
+					<a href="#img3">&#60;</a>
+					<a href="#img5"><img src="imagenes/13.jpg"></a>
+					<a href="#img5">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img5">
+				<h3>Parque Rosalía de Castro - Lugo</h3>
+				<div class="imagen">
+					<a href="#img4">&#60;</a>
+					<a href="#img6"><img src="imagenes/14.jpg"></a>
+					<a href="#img6">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img6">
+				<h3>Centro Gallego - Buenos Aires</h3>
+				<div class="imagen">
+					<a href="#img5">&#60;</a>
+					<a href="#img7"><img src="imagenes/8.jpg"></a>
+					<a href="#img7">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img7">
+				<h3>O Porto</h3>
+				<div class="imagen">
+					<a href="#img6">&#60;</a>
+					<a href="#img8"><img src="imagenes/16.jpg"></a>
+					<a href="#img8">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img8">
+				<h3>Panteón Galegos Ilustres</h3>
+				<div class="imagen">
+					<a href="#img7">&#60;</a>
+					<a href="#img1"><img src="imagenes/15.jpg"></a>
+					<a href="#img1">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+		</section>
+	
+			<nav>
+				<a href="index.html"><img src="imagenes/flor_menu2.png"> Inicio</a>
+				<a href="biografia.html"><img src="imagenes/flor_menu2.png"> Biografía</a>
+				<a href="obras.html"><img src="imagenes/flor_menu2.png"> Principais obras</a>
+				<a href="meritos.html"><img src="imagenes/flor_menu2.png"> Outros méritos</a>
+				<a href="citas.html"><img src="imagenes/flor_menu2.png"> Citas e frases</a>
+				<a href="monumentos.html"><img src="imagenes/flor_menu2.png"> Monumentos</a>
+			</nav>
+		
+	</div>
+</body>
+
+</html>

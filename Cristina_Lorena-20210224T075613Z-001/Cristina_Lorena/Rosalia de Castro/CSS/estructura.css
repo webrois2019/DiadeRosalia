@@ -1,0 +1,186 @@
+
+		html,
+		body,
+		div,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		article,
+		aside,
+		canvas,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		output,
+		ruby,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+	body {
+			line-height: 1;
+		}
+
+		/*Acaba el reset */
+
+		@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+		
+		body {
+			width: 100%;
+			height: auto;
+			font-size: 16px;
+			font-family: 'Great Vibes', cursive;
+			color: black;
+			background-color: rgb(232,232,208);
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 4em;
+			padding-top: 0.5em;
+			color: rgb(252,216,201);
+		
+
+		}
+
+		nav {
+			font-size: 50px;
+			display: flex;
+			justify-content: space-around;
+			background-color: rgb(252,216,201);
+			font-family: 'Great Vibes', cursive;
+			/*padding-left: 2em;*/
+
+			
+		}
+
+		header {
+			width: 100%;
+			height: 8em;
+			background-color: rgb(168,93,82);
+			font-family: 'Great Vibes', cursive;
+		}
+
+		header img {
+			width: 23%;
+		}
+
+		a {
+			font-weight: bolder;
+			margin: 0.5em;
+			/*padding-right: 6em;*/
+			text-decoration: none;
+			color: rgb(168,93,82);
+			/*border:1px solid;*/
+		}
+
+		/*img.poema {
+			width: 30%;
+			height: auto;
+
+		}*/
+
+		i {
+			font-size: 3em;
+			color: rgb(168,93,82);
+			margin-left: 26.5em;
+			
+
+		}
+
+		
+		/*a {
+			color: rgb(168,93,82);
+			background-color: rgb(168,93,82);
+			padding: 0.2em;
+		}*/
+
+
+		.contenido {
+			display: inline-flex;
+			align-items: center;
+			margin-left: 8.5em;
+		}
+
+
+		img {
+			width: 40%;
+			height: auto;
+			
+		}
+ 		
+ 		#camelias {
+ 			width: 18%;
+ 		}

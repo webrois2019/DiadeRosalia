@@ -1,0 +1,175 @@
+body {
+	width: 100%;
+	background-color: #dbace8;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+
+header {
+	background: #944DFF;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+h1 {
+	color: white;
+	font-size: 4em;
+	margin: 0px;
+	padding: 0.2em;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+
+
+}
+
+nav {
+	background-color: #944DFF;
+	width: 100%;
+	padding: 3em;
+}
+
+nav a {
+	font-size: 1.3em;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: white;
+	margin: 0em 1em 0em 0em;
+	background-color: black;
+	padding: 2%;
+
+
+}
+
+#portada {
+	display: inline-flex;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em 0em 1em 0em;
+}
+
+
+#portada img {
+	margin: 0 auto;
+	margin-left: 35%;
+}
+
+.cita {
+	font-family: 'Dancing Script', cursive;
+	text-align: left;
+	font-size: 2em;
+	width: 25%;
+	margin-left: 30%;
+	margin-top: 3em;
+}
+
+
+footer {
+	background: #944DFF;
+	width: 100%;
+	padding: 2em;
+
+}
+
+footer a {
+	background: #944DFF;
+	margin-left: 1.5em;
+	font-size: 1.3em;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+section {
+	display: inline-flex;
+	margin: 0 auto;
+
+}
+
+.row {
+	display: inline-flex;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.rosalia {
+	margin-top: 2em;
+}
+
+
+.div {
+	width: 70%;
+	border: 1px solid blue;
+	margin-right: 3em;
+}
+
+
+#contenido {
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 0;
+	margin-left: 5em;
+}
+
+#contenido article {
+	float: left;
+	width: 30%;
+	padding: .5em;
+	margin: 0.2em;
+}
+
+#contenido article div {
+	border: 1px solid #d9d9d9;
+	padding-bottom: 1em;
+}
+
+#contenido p {
+	padding: .5em;
+	padding-bottom: 0;
+	line-height: 1.5;
+	margin-top: 0 auto;
+
+
+}
+
+#contenido img {
+	width: 100%;
+	box-shadow: 2px 5px 5px gray;
+	border-radius: 0.6em;
+
+}
+
+.negrita {
+	font-weight: bold;
+}
+
+.fotos {
+	display: inline-block;
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+}
+
+.foto {
+
+	width: 20em;
+	height: 25em;
+	margin-bottom: 2em;
+	text-align: center;
+	box-shadow: 2px 5px 5px gray;
+	border-radius: 0.6em;
+}
+
+.sec {
+
+	width: 70%;
+	text-align: center;
+	margin-top: 3em;
+	margin-left: 9em;
+
+}

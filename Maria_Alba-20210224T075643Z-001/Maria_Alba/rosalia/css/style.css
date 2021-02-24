@@ -1,0 +1,259 @@
+/* Los tipos de letra no estándar hay que importarlos */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: Open Sans;
+	margin: 0px;
+}
+
+h1 {
+	font-family: Montserrat;
+	font-size: 40px;
+	color: #427551;
+	font-weight: 600;
+	letter-spacing: -3px;
+	text-align: center;
+}
+
+h2 {
+	font-family: Montserrat;
+	font-size: 32px;
+	color: #76b388;
+	font-weight: 600;
+	letter-spacing: -3px;
+}
+
+.cabecera {
+	min-height: 100px;
+	text-align: center;
+}
+
+.cabecera img {
+	width: 95%;
+	height: 240px;
+}
+
+.cuerpo {
+	max-width: 1100px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contenido {
+	float: left;
+	width: 60%;
+}
+
+.cursiva{
+		font-style: italic;
+	}
+
+.cur{
+		font-style: italic;
+		text-align: center;
+	}
+div.contenido img {
+	width: 100%;
+}
+
+.barra-lateral {
+	padding-top: 30px; 
+	float: right;
+	width: 30%;
+}
+
+.barra-lateral h3 {
+	color: #444;
+	text-align: center;
+	border-bottom: 1px solid #444;
+}
+
+.barra-lateral img {
+	width: 100%;
+	margin-top: 5%;
+}
+
+.pie {
+	clear: both;
+	color: white;
+	background-color: #76b388;
+	min-height: 90px;
+	padding: 10px;
+	text-align: center;
+}
+
+.pie p{
+	padding-top: 2%;
+}
+
+.negriver{
+	font-weight: bold;
+	color:#427551;
+	font-size: 20px;
+}
+
+.menu{
+	text-decoration: none;
+	background-color: #76b388;
+	padding: 3%;
+	border-radius: 10px 10px 10px 10px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #444;
+}
+
+.menupri{
+	list-style-type: none;
+	margin-bottom: 10%;
+}
+
+
+}
+@media (max-width: 640px) {
+	.barra-lateral {
+		display: none;
+	}
+
+	.cuerpo {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contenido {
+		float: none;
+		width: 100%;
+	}
+
+	h1,
+	h2,
+	h3 {
+		text-align: center;
+	}
+}
+
+/* carrusel
+
+ul,
+		li {
+			padding: 0;
+			margin: 0;
+			list-style: none inside;
+		}
+
+		ul.slider {
+
+		}
+
+		ul.slider li {
+			opacity: 0;
+			transition: opacity .4s;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			margin: 1em;
+			padding-top: 2em;
+			background: #fff;
+			text-align: center;
+			align-items: center;
+		}
+
+		ul.slider li:first-child {
+			opacity: 1;
+			
+		}
+
+		ul.slider li:target {
+			opacity: 1;
+			
+		}
+
+		ul.slider img {
+			width: 40%;
+			margin-top: 1em;
+			padding: 0em;
+			background: #fff;
+		}
+
+		nav {
+			width: 90%;
+			position: absolute;
+			top: auto;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: #f1f2f3;
+			margin: 2em;
+		}
+
+		nav ul {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		nav ul li {
+			display: flex;
+			flex-grow: 1;
+			flex-wrap: wrap;
+			box-sizing: border:box;
+		}
+
+		nav a {
+			font-size: 1vw;
+			text-decoration: none;
+			font-weight: bold;
+			color: #00324b;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			line-height: 1.8;
+			flex-grow: 1;
+			text-align: center;
+			border-top: 5px solid #00324b;
+			border-right: 1px solid #00324b;
+			flex-wrap: wrap;
+			position: relative;
+		}
+
+		nav li:last-child a {
+			border-right: 0;
+		}
+
+		nav a:hover {
+			background-color: #00324b;
+			color: #fff;
+			border-top-color: #65bce8;
+		}
+
+		nav a:active {
+			border-top-color: #f90;
+			background: #f90;
+			color: #00324b;
+		}
+
+		ul.slider {
+			padding: 30px;
+		}
+
+		ul.slider li {
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			background-color: #fff;
+			opacity: 0;
+			transition: opacity .5s;
+			padding-top: 0vh;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-weight: bold;
+			font-size: calc( 1rem + 1vw);
+			text-align: center;
+		}
+
+		 fin carrusel */
+
+
+

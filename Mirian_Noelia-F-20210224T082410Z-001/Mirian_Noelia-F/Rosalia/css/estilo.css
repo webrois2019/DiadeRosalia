@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+#cabeceira{
+	width: 100%;
+	height: auto;
+}
+
+header nav {
+	background-color: #222;
+	margin: 0;
+	padding: 0em;
+}
+
+header nav a {
+	list-style: none;
+	width: 25%;
+	margin: 0;
+	margin-left: 2em;
+	padding: 1em;
+	color: white;
+	font-family: 'La Belle Aurore', cursive;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+header nav a:hover {
+	color: #ddd;
+}
+
+#section_biografia{
+	display: inline-flex;
+	width: 100%;
+	margin: 0 auto;
+	/*border: 1px solid blue;*/
+}
+
+#imaxe_biografia{
+	width: 30%;
+	margin: .5em 1.5em 2em 4em;
+	/*border: 1px solid red;*/
+}
+
+#imaxe_biografia img{
+	width: 100%;
+	height: auto;
+	/*border: 1px solid orange;*/
+}
+
+#texto_biografia{
+	width: 70%;
+	margin: .5em 3em 2em 2em;
+	/*border: 1px solid green;*/
+}
+
+#texto_biografia div{
+	margin-bottom: 2em;
+}
+
+#texto_biografia p{
+	margin:2em;
+	margin-bottom: 1em;
+}
+
+#section_obra{
+	width: 90%;
+	margin: 0 auto;
+	/*border: 1px solid blue;*/
+}
+
+.div_obra{
+	display: inline-flex;
+	width: 100%;
+	/*border: 1px solid black;*/
+}
+
+.imaxe{
+	width: 30%;
+	height: auto;
+	margin: 1em 1em 1em 4em;
+	/*border:1px solid red;*/
+}
+
+.div_obra img{
+	float: left;
+
+	/*border: 1px solid orange;*/
+}
+.div_obra p{
+	width: 100%;
+	margin: .5em 4em .5em 4em;
+	/*border: 1px solid purple;*/
+}
+
+.div_libros{
+	/*border:1px solid green;*/
+}
+
+.div_libros p{
+	width: 85%;
+}
+
+.negrinha{
+	color: red;
+	font-weight: bold;
+	margin-left: 2em;
+}
+
+h2{
+	color:red;
+	text-align: center;
+	margin-top: 1em;
+	font-size: 2.5em;
+	font-family: 'La Belle Aurore', cursive;
+}
+
+h3{
+	color:red;
+	margin-left: 4em;
+	margin-top: 1em;
+	font-size: 1.10em;
+
+}
+
+blockquote{
+	margin-left: 6em;
+	margin-right: 4em;
+	font-style: italic;
+	font-size: 1.30em;
+	font-family: 'Neucha', cursive;
+}
+.noelia{
+	font-style: italic;
+	font-weight: bold;
+}
+
+div{
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+
+p{
+	line-height: 1.6em;
+}
+
+div a{
+	font-size: 1.2em;
+	text-decoration: none;
+	color: black;
+	/*border: 1px solid blue;*/
+}
+
+div i{
+	font-size: 3em;
+	color: red;
+}

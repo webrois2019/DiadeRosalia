@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Rosalía_Castro</title>
+	<style type="text/css">
+
+	@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+
+	@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
+		body {
+			font-size: 18px;
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Truculenta', sans-serif;
+		}
+
+		/** {
+			margin: 0.1em;
+			padding: 0.5em;
+		}*/
+
+		#main {
+			min-height: 500px;
+			margin: 0.1em;
+			padding: 0.5em;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row;
+			flex-flow: row;
+			width: 98%;
+
+		}
+
+		#main>nav {
+
+			border-radius: 7pt;
+			-webkit-order: 1;
+			order: 1;
+			display: block;
+			padding: 0.5em;
+			margin: 0.1em;
+			width:15%;
+
+		}
+
+		#main>section {
+
+			-webkit-flex: 70%;
+			flex: 70%;
+			-webkit-order: 2;
+			order: 2;
+			padding: 0.5em;
+			margin-top: 0.5em;
+			box-shadow: 0px 0px 4px 4px pink;
+			border-radius: 1em;
+
+		}
+
+		header {
+			border-radius: 7pt;
+			margin: 0px !important;
+			padding: 0px !important;	
+			text-align: center;
+		}
+
+		header img{
+			width: 98%;border-radius: 1em;
+			box-shadow: 5px 5px 5px pink;			;
+			border:0px;
+		}
+
+	
+		#main nav a {
+			padding: 0.5em;
+			margin: 0.5em;
+			background: #deb6fb;
+			border: outset pink;
+			font-size: 1em;
+			display: block;
+			color: #000;
+			text-decoration: none;
+			border-radius: 1em;
+
+		}
+
+
+		#main nav a:hover {
+			margin: 0.2em;
+			padding: 0.6em;
+			background: pink;
+			color: black;
+			border-radius:7pt;
+			border: 5px ridge pink;
+
+		}
+
+		h1,
+		h2,
+		h3 {
+
+			font-weight: 900;
+			font-size: 2.5em;
+			margin-top: 0em;
+			font-family: 'Qwigley', cursive;
+		}
+
+
+
+		/*section div {
+			padding: 0.5em;
+			margin: 0.1em;
+			border: 2px solid #000;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 1em;
+
+		}
+		*/
+
+		/*section div div {
+			padding: 0.5em;
+			margin: 0.1em;m;
+			border: 2px solid blue;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 0.7em;
+
+		}*/
+
+		section>p {
+			font-size: 1.5em;
+			margin: 1.5em 0.5em 0em 0.5em;
+
+		}
+		div>p{
+			font-size: 1.2em;
+			margin: 1.5em 0.5em 2em 0.5em;
+			font-family: 'Truculenta', sans-serif;
+			}
+
+		
+
+
+
+		/*div>p {
+			font-weight: bold;
+			color: midnightblue
+		}*/
+
+		/* Demasiado estrecho para soportar tres columnas? */
+
+		@media all and (max-width: 640px) {
+
+			#main {
+				-webkit-flex-flow: column;
+				flex-flow: column;
+
+			}
+
+			#main>nav,
+			header,{
+				min-height: 50px;
+				max-height: 50px;
+			}
+
+			#main>section,
+			#main>nav,
+		}
+
+		.negrita{
+			font-weight: bold;
+		}
+
+		.cursiva{
+			font-style: italic;
+		}
+
+		.imagen{
+			margin-left: 7em;
+		}
+
+		.imagen2{
+			margin-left: 12em;
+		}
+
+		.img{
+			float: right;
+			width: 15%;
+			margin: 0em 1em 1em 1em;
+			border-radius: 1em;
+		}
+
+		.img2{
+			float: left;
+			width: 30%;
+			margin: 0em 1em 1em 1em;
+			border-radius: 1em;
+		}
+
+		.img3{
+			float: right;
+			width: 30%;
+			margin: 0em 1em 1em 1em;
+			border-radius: 1em;
+		}
+
+		.img4{
+			float: left;
+			width: 35%;
+			margin: 0em 1em 1em 1em;
+			border-radius: 1em;
+
+		}
+
+		.texto{
+			margin-top: 7em;
+		}
+	
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="imagenes/cabecera2.png">
+	</header>
+	<div id="main">
+		<section>
+			<a name="Ancla" id="a"></a>
+
+			<h1>Outros méritos</h1>
+				<div>
+					<img class="img" src="imagenes/feminista.jpg">
+					<p>La Hija del Mar (en lingua castelá, ano 1859):obra en prosa,​ que ademais foi a primeira das novelas de Rosalía. Nela desenvólvese o tema do <span class="negrita"> temperamento feminino</span>, tratándose dun relato de marcado carácter reivindicativo no que dúas mulleres tentan defender a súa honra no medio dun ambiente  predominantemente feminino. Destaca o prólogo da novela, onde a autora, <span class="negrita">defende os dereitos da muller na vida intelectual</span>: <span class="cursiva">"Porque todavía no les es permitido a las mujeres escribir lo que sienten y lo que saben".</span> Cita predecesoras destacadas tanto do mundo das artes como da política, incluíndo algúns exemplos de mulleres loitadoras, reformadoras e poderosas en diferentes ámbitos da vida pública. Tal como defínea a catedrática Pilar García Negro, Rosalía foi unha <span class="negrita">"feminista na sombra"</span> que <span class="negrita">reivindicou o papel das mulleres nun momento moi complicado.</span></p>
+					
+				<br>
+				</div>
+
+				<div>
+					<p>No ano <span class="negrita">1979</span> utilizouse a súa imaxe para os <span class="negrita">billetes de 500 pesetas.</span> Desta forma, Rosalía de Castro converteuse xunto con <span class="cursiva">Isabel a Católica</span>, no <span class="negrita">único personaxe feminino</span> retratado no anverso dun billete propiamente español.</p>
+					<img  class="imagen2" src="imagenes/billete.jpg">
+				</div>
+
+				<div>
+					<p>No <span class="negrita">2015</span> google rindeulle homenaxe á Rosalía de Castro coincidindo co día do <span class="negrita">178 aniversario</span> do seu nacemento, adícandolle o seu doodle.</p>
+					<img class="imagen" src="imagenes/doodle.jpg">
+				</div>
+
+				<div>
+					<img class="img2" src="imagenes/avion.jpg">
+					<p>No <span class="negrita">2017</span> a aerolínea Norwegian elixiu á poetisa galega para bautizar a un dos seus <span class="negrita">Boeing 737</span>.«La incorporación de la figura de Rosalía de Castro quiere reivindicar su doble papel pionero, en la recuperación del gallego como lengua de cultura y su papel como matriarca de las letras gallegas por un lado, y en la emancipación de la mujer por el otro», afirma Miguel Urresti, responsable de Marketing de Norwegian en España.</p>
+
+				</div>
+
+				<div>
+					<img class="img3" src="imagenes/estrella.jpeg">
+					<p class="texto" >O <span class="negrita">17 de decembro de 2019</span>, a estrela anteriormente denominada HD149143 foi nomeada oficialmente pola <span class="negrita">Unión Astronómica Internacional</span> como  <span class="negrita">Rosalíadecastro</span>, a cal conta cun <span class="negrita">planeta  extrasolar</span> que a orbita, chamado <span class="negrita">Río Sar</span>.</p>
+
+				</div>
+
+				<div>
+					<img class="img4" src="imagenes/aeropuerto.jpg">
+					<p class="texto"> O <span class="negrita">2 de abril de 2020</span>, o Boletín Oficial do Estado publicou o cambio de denominación do principal aeroporto da Comunidade Autónoma de Galicia polo de <span class="negrita">Aeroporto de Santiago-Rosalía de Castro</span> (anteriormente Aeroporto de Santiago de Compostela ou Aeroporto de Lavacolla), dando cumprimento a un acordo unánime do Pleno do Concello da capital galega do ano 2017, ao cumprirse o 180 aniversario do seu nacemento.</p>
+				</div>
+				<a href="#Ancla">Ir arriba</a>
+		</section>
+	
+			<nav>
+				<a href="index.html"><img src="imagenes/flor_menu2.png"> Inicio</a>
+				<a href="biografia.html"><img src="imagenes/flor_menu2.png"> Biografía</a>
+				<a href="obras.html"><img src="imagenes/flor_menu2.png"> Principais obras</a>
+				<a href="meritos.html"><img src="imagenes/flor_menu2.png"> Outros méritos</a>
+				<a href="citas.html"><img src="imagenes/flor_menu2.png"> Citas e frases</a>
+				<a href="galeria.html"><img src="imagenes/flor_menu2.png"> Galería</a>
+			</nav>
+		
+	</div>
+</body>
+
+</html>

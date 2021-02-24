@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Rosalía_Castro</title>
+	<style type="text/css">
+
+	@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+
+	@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
+		body {
+			font-size: 18px;
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Truculenta', sans-serif;
+		}
+
+		/** {
+			margin: 0.1em;
+			padding: 0.5em;
+		}*/
+
+		#main {
+			min-height: 500px;
+			margin: 0.1em;
+			padding: 0.5em;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row;
+			flex-flow: row;
+			width: 98%;
+
+		}
+
+		#main>nav {
+
+			border-radius: 7pt;
+			-webkit-order: 1;
+			order: 1;
+			display: block;
+			padding: 0.5em;
+			margin: 0.1em;
+			width:15%;
+
+		}
+
+		#main>section {
+
+			-webkit-flex: 70%;
+			flex: 70%;
+			-webkit-order: 2;
+			order: 2;
+			padding: 0.5em;
+			margin-top: 0.5em;
+			box-shadow: 0px 0px 4px 4px pink;
+			border-radius: 1em;
+
+		}
+
+		header {
+			border-radius: 7pt;
+			margin: 0px !important;
+			padding: 0px !important;	
+			text-align: center;
+		}
+
+		header img{
+			width: 98%;border-radius: 1em;
+			box-shadow: 5px 5px 5px pink;
+			border:0px;
+		}
+
+
+		#main nav a {
+			padding: 0.5em;
+			margin: 0.5em;
+			background: #deb6fb;
+			border: outset pink;
+			font-size: 1em;
+			display: block;
+			color: #000;
+			text-decoration: none;
+			border-radius: 1em;
+
+		}
+
+
+		#main nav a:hover {
+			margin: 0.2em;
+			padding: 0.6em;
+			background: pink;
+			color: black;
+			border-radius:7pt;
+			border: 5px ridge pink;
+
+		}
+
+		h1,
+		h2,
+		h3 {
+
+			font-weight: 900;
+			font-size: 2.5em;
+			margin-top: 0em;
+			font-family: 'Qwigley', cursive;
+			
+		}
+
+
+		.obras img{
+			width: 50%;
+		}
+
+
+		.obras{
+			display: inline-block;
+			margin: 1em 0em 1em 5em;
+			width: 40%
+
+			}
+
+		/*section div {
+			padding: 0.5em;
+			margin: 0.1em;
+			border: 2px solid #000;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 1em;
+
+		}
+		*/
+
+		/*section div div {
+			padding: 0.5em;
+			margin: 0.1em;m;
+			border: 2px solid blue;
+			border-radius: 5pt;
+			background: #ccc;
+			font-size: 0.7em;
+
+		}*/
+
+		/*section>p {
+			font-size: 1.5em;
+			margin: 1.5em 0.5em 0em 0.5em;
+
+		}*/
+
+
+		/*div>p {
+			font-weight: bold;
+			color: midnightblue
+		}*/
+
+		/* Demasiado estrecho para soportar tres columnas? */
+
+		@media all and (max-width: 640px) {
+
+			#main {
+				-webkit-flex-flow: column;
+				flex-flow: column;
+
+			}
+
+			#main>nav,
+			header,{
+				min-height: 50px;
+				max-height: 50px;
+			}
+
+			#main>section,
+			#main>nav,
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="imagenes/cabecera2.png">
+	</header>
+	<div id="main">
+		<section>
+			
+			<h1>Principais obras</h1>
+
+					<div class="obras">
+					<img src="imagenes/la_flor.jpg">
+					(1857)
+				</div>
+				
+
+					<div class="obras">
+					<img src="imagenes/hija_mar.jpg">
+					(1858)
+				</div>
+					
+
+					<div class="obras">
+					<img src="imagenes/mi_madre.jpg">
+					(1863)
+				</div>
+				
+
+					<div class="obras">
+					<img src="imagenes/cantares_gallegos.jpg">
+					(1863)
+				</div>
+						
+
+					<div class="obras">
+					<img src="imagenes/contos_terra.jpg">
+					(1864)
+				</div>
+				
+
+				
+					<div class="obras">
+					<img src="imagenes/botas_azules.jpg">
+					(1867)
+					</div>
+				
+
+					<div class="obras">
+					<img src="imagenes/follas_novas.jpg">
+					(1880)
+					</div>
+					
+
+					<div class="obras">
+					<img src="imagenes/orillas_sar_2.jpg">
+					(1884)
+					</div>
+					
+
+		</section>
+	
+			<nav>
+				<a href="index.html"><img src="imagenes/flor_menu2.png"> Inicio</a>
+				<a href="biografia.html"><img src="imagenes/flor_menu2.png"> Biografía</a>
+				<a href="obras.html"><img src="imagenes/flor_menu2.png"> Principais obras</a>
+				<a href="meritos.html"><img src="imagenes/flor_menu2.png"> Outros méritos</a>
+				<a href="citas.html"><img src="imagenes/flor_menu2.png"> Citas e frases</a>
+				<a href="galeria.html"><img src="imagenes/flor_menu2.png"> Galería</a>
+			</nav>
+		
+	</div>
+</body>
+
+</html>

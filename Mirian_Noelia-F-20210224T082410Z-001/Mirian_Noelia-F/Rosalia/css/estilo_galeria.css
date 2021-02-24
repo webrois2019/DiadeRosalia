@@ -1,0 +1,102 @@
+/*body {
+	margin: 0;
+	padding: 0;
+	width: 90%;
+	text-align: center;
+}*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#contenido {
+	width: 90%;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#botones article {
+	display: inline-flex;
+	text-align: center;
+	width: auto;
+	height: 62px;
+	padding: 0;
+	padding-top: 5px;
+	margin: 1em;
+	border: 1px solid #d9d9d9;
+}
+
+#botones img {
+	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+	-webkit-transition: box-shadow 1.5s ease;
+	-moz-transition: box-shadow 1.5s ease;
+	transition: box-shadow 1.5s ease;
+}
+
+#botones article:hover {
+	-webkit-box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
+	box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
+}
+
+div#galeria {
+	height: 690px;
+	padding-top: 30px;
+	width: 90%;
+	position: relative;	
+	text-align: center;	align-self: center;
+	justify-content: center;
+	align-items: center;
+}
+
+div#galeria h1 {
+	margin: 0;
+}
+
+div#galeria article[id|=rosalia] {
+	text-align: center;
+}
+
+div#galeria article.image {
+	height: 550px;
+	/* la misma altura que la de #galeria !!! */
+	width: 90%;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+div#galeria article.image img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease;
+	-moz-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+	width: auto;
+}
+
+div#galeria article:target img {
+	opacity: 1;
+}
+		
+div#galeria article img {
+	opacity: 1;
+}

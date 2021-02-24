@@ -1,0 +1,212 @@
+
+
+/* ---- Estilos básicos ---------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #F2F5FE;
+	font: 12px "verdana", sans-serif;
+	color: rgb(232,232,208);
+}
+
+a {
+	color: #192666;
+}
+
+a:hover {
+	color: #4F6AD7;
+}
+
+.clear {
+	clear: both;
+}
+
+
+p {
+	margin: 1px;
+	padding: 0px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 2.5em;
+
+}
+
+h1 {
+	font-size: 8em;
+	font-family: 'Great Vibes', cursive;
+	font-weight: normal;
+	padding: 0.5em;
+	color: rgb(252,216,201);
+}
+
+h2 {
+	font-size: 1.5em;
+	font-family: "georgia", serif;
+	font-weight: normal;
+	padding: 0.5em;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+div{
+	margin-left: 3em;
+}
+
+
+/* ---- Layout ------------------------------------------------------------- */
+
+#contenedor {
+	width: 90%;
+	margin: 1em auto 0 auto;
+}
+
+#cabecera {
+	width: 100%;
+	height: auto padding: 0.5em;
+	background: #233C9B;
+	border-radius: 0.5em;
+}
+
+#contenido {
+	width: 100%;
+	margin: 0 auto;
+	background: #FFF;
+	border-radius: 0.5em;
+}
+
+#contenido #principal {
+	width: 99%;
+	margin: 0em;
+	padding: 0em;
+	background: rgb(232,232,208);
+
+}
+
+#pie {
+	clear: both;
+	height: 60px;
+	margin-bottom: 50px;
+	background: #CEDBF9;
+	color: #6685CC;
+	border-radius: 0.5em;
+}
+
+/* ---- Cabecera ----------------------------------------------------------- 
+
+#logo {
+	color: #B5C4E3;
+	margin: 0;
+}
+
+#logo a {
+	color: #B5C4E3;
+	display: block;
+	line-height: auto;
+}
+
+#logo a:hover {
+	color: #B5C4E3;
+	text-decoration: underline;
+}
+*/
+
+/* ---- Menú --------------------------------------------------------------- */
+
+nav {
+	width: 100%;
+	margin: 0em;
+	padding: 0.5em;
+	font-size: 1.2em;
+}
+
+nav a {
+	width: 100%;
+	margin: 0 10px;
+	padding: 1em;
+
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	background: #FFF;
+	color: #253575;
+	border-radius: 0.5em 0em 0em 0em;
+}
+
+nav a:hover {
+	background: #FFF;
+	color: #FF9000;
+	box-shadow: 5px 5px 5px #253575;
+}
+
+.nav .seleccionado a {
+	background: #FFF;
+	color: #FF9000;
+}
+
+/* ---- Contenidos --------------------------------------------------------- */
+
+#contenido article {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+#contenido article div {
+	width: 45%;
+	margin: 1.1em;
+	padding: 1em;
+	background: ;
+	display: inline-block;
+	border-bottom: 1px dashed #253575;
+	border-right: 1px dashed #253575;
+	border-left: 1px dashed #253575;
+}
+
+#contenido .articulo h2 {
+	margin: 0px;
+	padding: 0.7em;
+	background: #DEE5FD;
+	color: #192666;
+	border-radius: 1em;
+}
+
+#contenido .articulo p {
+	margin: 0;
+	padding: 1em;
+}
+
+#contenido .articulo h3 {
+	padding: 1em;
+	margin: 0px;
+	background: rgb(232,232,208);
+	color: #192666;
+	border-radius: 1em;
+}
+
+#contenido .articulo a {
+	display: inline-block;
+	padding: 0.5em;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 0.5em;
+	border: 1px dashed #A0B9F3;
+}
+
+#contenido .articulo a:hover {
+
+	background: #FFF;
+	color: #FF9000;
+	border-radius: 0.5em;
+	border: 1px dashed #A0B9F3;
+}
+
+
+/* ---- Pie ---------------------------------------------------------------- */
+
+#pie p {
+	margin: 0;
+	padding: 1em;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	
+	<title>Rosalía de Castro</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/estructura.css">
+	<style type="text/css">
+		
+		/*header,
+		footer {
+			display: block;
+			min-height: auto;
+			border: 1px solid #000;
+			border-radius: 7pt;
+			background: #ffeebb;
+
+		}*/
+
+		#main {
+			min-height: auto;
+			margin: 0px;
+			padding: 0px;
+
+		}
+
+
+
+		h1,
+		h2,
+		h3 {
+
+			font-weight: 900;
+			font-family: serif;
+		}
+
+		#main>section {
+			border: 1px solid rgb(232,232,208);
+			border-radius: 7pt;
+			background: rgb(232,232,208);
+			display: flex;
+			justify-content: center;
+			width: auto;
+			-webkit-order: 2;
+			order: 2;
+			border: 1x solid red;
+		}
+
+		section article {
+			margin: auto;
+			padding: 1em;
+			border: 2px solid rgb(232,232,208);
+			border-radius: 5pt;
+			background: rgb(232,232,208);
+			font-size: 1em;
+		}
+
+		/* ---------------------------------------- CARRUSEL --------------------- */
+
+		ul,
+		li {
+			padding: 0;
+			margin: 0;
+			list-style: none inside;
+		}
+
+		ul.slider {
+
+			/* position: relative;Necesitamos que el ul sea relativo */
+		}
+
+		ul.slider li {
+			opacity: 0;
+			/*Ocultamos todos los <li>*/
+			transition: opacity .4s;
+			position: absolute;
+			/* Posicionamos en absoluto los <li> */
+			left: 0px;
+			top: 0px;
+			margin: 1em;
+			padding-top: 2em;
+			background: rgb(232,232,208);
+			text-align: center;
+			align-items: center;
+		}
+
+		ul.slider li:first-child {
+			opacity: 1;
+			/*Mostramos el primer <li>*/
+		}
+
+		ul.slider li:target {
+			opacity: 1;
+			/* Mostramos el <li> al que apunta el enlace */
+		}
+
+		ul.slider img {
+			width: 30%;
+			margin-top: 1em;
+			padding: 0em;
+			background: rgb(232,232,208);
+		}
+
+		article {
+			width: 90%;
+			position: absolute;
+			top: auto;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgb(252,216,201);
+			margin: 2em;
+		}
+
+		article ul {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		article ul li {
+			display: flex;
+			flex-grow: 1;
+			flex-wrap: wrap;
+			box-sizing: border:box;
+		}
+
+		article a {
+			font-size: 1vw;
+			text-decoration: none;
+			font-weight: bold;
+			color: rgb(164,95,80);
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			line-height: 1.8;
+			flex-grow: 1;
+			text-align: center;
+			border-top: 5px solid rgb(164,95,80);
+			border-right: 1px solid rgb(164,95,80);
+			flex-wrap: wrap;
+			position: relative;
+		}
+
+		article li:last-child a {
+			border-right: 0;
+		}
+
+		article a:hover {
+			background-color: rgb(168,93,82);
+			color: #fff;
+			border-top-color: rgb(164,95,80);
+		}
+
+		article a:active {
+			border-top-color: green;
+			background: rgb(232,232,208);
+			color: rgb(168,93,82);
+		}
+
+		ul.slider {
+			padding: 30px;
+		}
+
+		ul.slider li {
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			background-color: rgb(232,232,208);
+			opacity: 0;
+			transition: opacity .5s;
+			padding-top: 0vh;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-weight: bold;
+			font-size: calc( 1rem + 1vw);
+			text-align: center;
+		}
+
+
+
+		/* FIN CARRUSEL */
+
+		/* Demasiado estrecho para soportar tres columnas? */
+
+		@media all and (max-width: 640px) {
+
+			#main {
+				-webkit-flex-flow: column;
+				flex-flow: column;
+
+			}
+
+			#main>article,
+			#main>aside,
+			header,
+			footer {
+				min-height: 50px;
+				max-height: 50px;
+
+			}
+
+			#main>section,
+			#main>article,
+			#main>aside {
+				/* volver al orden del documento 
+                order especifica el orden utilizado para disponer los elementos en su contenedor flexible 
+				-webkit-order: 0;
+				order: 0;
+			}
+			
+		}
+
+	</style>
+</head>
+
+
+	<body>
+		
+		<header style="display: flex;justify-content: space-around;">
+			<a href="ROSALIA/index.html"><img src="imagenes/ROSALIAFINAL.png"></a>
+			<h1>Unha viaxe con Rosalía...</h1>
+	
+		</header>
+		
+		<nav>
+				<a href="coimbra.html">Portugal</a>
+				<a href="sanfiz.html">Ourense</a>
+				<a href="aponte.html">A Coruña</a>
+				<a href="carrusel/carrusel.html">Galería</a>
+		</nav>	
+
+		<div id="main">
+		<section>
+			
+			<ul class="slider">
+				<li id="slide1"><img src="../imagenes/Rosalia.jpg"  /></li>
+					<li id="slide2"><img src="../imagenes/familia.jpg"/></li>
+						<li id="slide3"><img src="../imagenes/billete500.jpeg" /></li>
+							<li id="slide4"><img src="../imagenes/ondenaceu.jpg"/></li>
+								<li id="slide5"><img src="../imagenes/campanabastavales.jpg"/></li>
+								<li id="slide6"> <img src="../imagenes/riomiño.jpg" /></li>
+									<li id="slide7"><img src="../imagenes/coimbra.jpg" /></li>
+										<li id="slide8"><img src="../imagenes/sanfiz.jpg"/></li>
+											<li id="slide9"><img src="../imagenes/casapadron.jpg" /></li>
+												<li id="slide10"><img src="../imagenes/rosalia-castro-400x557.jpg" /></li>
+			</ul>
+
+			<article>
+				<ul class="menu">
+					<li><a href="#slide1"> 1</a></li>
+						<li><a href="#slide2"> 2</a></li>
+							<li><a href="#slide3"> 3</a></li>
+								<li><a href="#slide4"> 4</a></li>
+									<li><a href="#slide5"> 5</a></li>
+										<li><a href="#slide6"> 6</a></li>
+											<li><a href="#slide7"> 7</a></li>
+												<li><a href="#slide8"> 8</a></li>
+													<li><a href="#slide9"> 9</a></li>
+														<li><a href="#slide10"> 10</a></li>
+				</ul>
+			</article>
+		</section>
+	</div>
+	
+</body>
+
+</html>

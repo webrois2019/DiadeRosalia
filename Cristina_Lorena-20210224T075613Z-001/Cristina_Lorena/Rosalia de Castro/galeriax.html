@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Galeria Imagen-Texto</title>
+	<link rel="stylesheet" type="text/css" href="CSS/estructura.css">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta content="" />
+	<meta content="" />
+	<meta content="" />
+	<meta content="" />
+	<meta content="" />
+	<meta content="" />
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		*,
+		*:before,
+		*:after {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		#contenido {
+			width: 390px;
+			margin: 0 auto;
+		}
+
+
+		#botones article {
+			display: inline-block;
+			text-align: center;
+			width: 15.75%;
+			height: 62px;
+			padding: 0;
+			padding-top: 5px;
+			margin: 0;
+			margin-bottom: 1em;
+			
+		}
+
+		#botones img {
+			-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+			-webkit-transition: box-shadow 1.5s ease;
+			-moz-transition: box-shadow 1.5s ease;
+			transition: box-shadow 1.5s ease;
+			width: 55.75%;
+
+		}
+
+		#botones article:hover {
+			-webkit-box-shadow: 0 0 6px 1px rgba(168, 93, 82, 1);
+			box-shadow: 0 0 6px 1px rgba(168, 93, 82, 1);
+		}
+
+		div#galeria {
+			height: 690px;
+			padding-top: 30px;
+			width: 690px;
+			position: relative;
+			right: 10em;
+			
+		}
+
+		div#galeria h1 {
+			margin: 0;
+		}
+
+		div#galeria article[id|=flor] {
+			text-align: center;
+		}
+
+		div#galeria article.image {
+			height: 690px;
+			/* la misma altura que la de #galeria !!! */
+			width: 390px;
+			pointer-events: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		div#galeria article.image img {
+			position: relative;
+			top: 15em;
+			bottom: 0;
+			right: 0;
+			opacity: 0;
+			-webkit-transition: opacity 1.5s ease;
+			-moz-transition: opacity 1.5s ease;
+			transition: opacity 1.5s ease;
+			border: 1px;
+			box-shadow: 1px 1px 6px 1px rgba(168, 93, 82, 1);
+			width: 150%;
+
+		}
+
+		div#galeria article:target img,
+		div#galeria article.target img {
+			opacity: 1;
+		}
+
+		nav {
+			font-size: 49.5px;
+			font-weight: bolder;
+		}
+
+		article img {
+			position: relative;
+			width: 100%;
+			height: auto;
+		}
+
+		article.image {
+			margin-right: 16em;
+		}
+
+		article p {
+			margin-top: 12em;
+			font-size: 24px;
+			font-weight: 600;
+		
+		}
+		
+
+		.parrafo {
+			border: 1px solid red;
+			position: relative;
+		}
+
+		/*div#galeria .image p {
+			float: right;
+			margin-left: 0px;
+			width: 50%;
+			text-align: ;
+			opacity: 0.5;
+			-webkit-transition: opacity 1.5s ease;
+			-moz-transition: opacity 1.5s ease;
+			transition: opacity 1.5s ease;
+		}*/
+
+
+div#galeria .image img {
+	width: 30%;
+	height: auto;
+	margin: 0px;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease;
+	-moz-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+div#galeria .image p {
+	float: right;
+	margin-left: 0px;
+	width: 100%;
+	text-align: left;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease;
+	-moz-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+	
+}
+
+div#galeria article:target img,
+div#galeria article.target img,
+div#galeria article:target p,
+div#galeria article.target p {
+	opacity: 1;
+}
+
+
+	</style>
+</head>
+
+<body>
+	<header style="display: flex;justify-content: space-around;">
+			<a href="index.html"><img src="imagenes/ROSALIAFINAL.png"></a>
+			<h1>Unha viaxe con Rosalía...</h1>
+	
+		</header>
+		
+		<nav>
+				<a href="coimbra.html">Portugal</a>
+				<a href="sanfiz.html">Ourense</a>
+				<a href="aponte.html">A Coruña</a>
+				<a href="carrusel/carrusel.html">Galería</a>
+			</nav>		
+			
+	<div id="contenido">
+
+		<div id="galeria">
+			<h1 style="font-size: 30px;color: black;padding-bottom: 18px;">Fai clic nas miniaturas para ver a imaxe.</h1>
+			
+			<div id="botones">
+				<article>
+					<a href="#flor1"><img src="imagenes/ondenaceu.jpg" width="50" height="50" alt="vista previa flor"></a>
+				</article>
+				<article>
+					<a href="#flor2"><img src="imagenes/campanabastavales.jpg" width="50" height="50" alt="vista previa flor"></a>
+				</article>
+				<article>
+					<a href="#flor3"><img src="imagenes/riomiño.jpg" width="50" height="50" alt="vista previa flor"></a>
+				</article>
+				<article>
+					<a href="#flor4"><img src="imagenes/coimbra.jpg" width="50" height="50" alt="vista previa flor"></a>
+				</article>
+				<article>
+					<a href="#flor5"><img src="imagenes/sanfiz.jpg" width="50" height="50" alt="vista previa flor"></a>
+				</article>
+				<article>
+					<a href="#flor6"><img src="imagenes/casapadron.jpg" width="50" height="50" alt="vista previa flor"></a>
+				</article>
+
+			</div>
+
+			<div class="image">
+				<article id="flor1" class="image">
+					<img src="imagenes/ondenaceu.jpg" width="390" height="390" alt="Casa onde naceu Rosalía de Castro (Santiago de Compostela)">
+					<p>Casa onde naceu Rosalía de Castro (Santiago de Compostela)</p>
+				</article>
+				
+				<article id="flor2" class="image">
+					<img src="imagenes/campanabastavales.jpg" width="390" height="390" alt="Igrexa Bastavales">
+					<p>Igrexa Bastavales</p>
+				</article>
+
+				<article id="flor3" class="image">
+					<img src="imagenes/riomiño.jpg" width="390" height="390" alt="Río Miño no seu paso entre Galiza e Portugal">
+					<p>Río Miño no seu paso entre Galiza e Portugal.</p>
+				</article>
+
+				<article id="flor4" class="image">
+					<img src="imagenes/coimbra.jpg" width="390" height="390" alt="Coimbra (Portugal)">
+					<p>Coimbra (Portugal)</p>
+				</article>
+
+				<article id="flor5" class="image">
+					<img src="imagenes/sanfiz.jpg" width="390" height="390" alt="San Fiz (Ourense)">
+					<p>San Fiz (Ourense)</p>
+				</article>
+
+				<article id="flor6" class="image">
+					<img src="imagenes/casapadron.jpg" width="390" height="390" alt="Fotografía da casa de Rosalía na Matanza, Padrón">
+					<p>Fotografía da casa de Rosalía na Matanza, Padrón</p>
+				</article>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+
+</html>

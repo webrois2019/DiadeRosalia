@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head lang="es">
+	<meta charset="utf-8">
+	<title>Rosalía de Castro</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+		}
+
+		#main {
+			min-height: 800px;
+			margin: 0px;
+			padding: 0px;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row;
+			flex-flow: row;
+
+		}
+
+		#main>nav {
+			-webkit-flex: 20%;
+			flex: 20%;
+			-webkit-order: 1;
+			order: 1;
+			display: block;
+		}
+
+		#main>section {
+			-webkit-flex: 70%;
+			flex: 70%;
+			-webkit-order: 2;
+			order: 2;
+		}
+
+
+		#main>aside {
+			-webkit-flex: 15%;
+			flex: 15%;
+			-webkit-order: 3;
+			order: 3;
+		}
+
+		/*Estilos de la galeria*/
+
+		.galeria {
+			width: 90%;
+			margin: auto;
+			list-style: none;
+			padding: 20px;
+			box-sizing: border-box;
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.galeria li {
+			margin: 5px;
+		}
+
+		.galeria img {
+			width: 150px;
+			height: 100px;
+		}
+
+		/*Estilos del modal*/
+
+		.modal {
+			display: none;
+		}
+
+		.modal:target {
+
+			display: block;
+			position: fixed;
+			background: rgba(0, 0, 0, 0.8);
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.modal h3 {
+			color: #76b388;
+			font-family: Montserrat;
+			font-size: 30px;
+			text-align: center;
+			margin: 15px 0;
+		}
+
+		.imagen {
+			width: 100%;
+			height: 50%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.imagen a {
+			color: #fff;
+			font-size: 40px;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+
+		.imagen a:nth-child(2) {
+			margin: 0;
+			height: 100%;
+			flex-shrink: 2;
+		}
+
+		.imagen img {
+			width: 500px;
+			height: 100%;
+			max-width: 100%;
+			border: 7px solid #fff;
+			box-sizing: border-box;
+		}
+
+		.cerrar {
+			display: block;
+			background: #76b388;
+			color:white;
+			width: 25px;
+			height: 25px;
+			margin: 15px auto;
+			text-align: center;
+			text-decoration: none;
+			font-size: 25px;
+			padding: 5px;
+			border-radius: 50%;
+			line-height: 25px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<div class="cabecera">
+		<img src="imagenes/arriba.jpg"/>
+	</div>
+	<div class="cuerpo">
+		<div class="contenido">
+			<h1>Rosalía de Castro</h1>
+			<h2>OBRA</h2>
+
+			<div id="main">
+
+		<section>
+
+			<ul class="galeria">
+				<li><a href="#img1"><img src="imagenes/la_flor.jpg"></a></li>
+				<li><a href="#img2"><img src="imagenes/lieders.jpg"></a></li>
+				<li><a href="#img3"><img src="imagenes/la_hija_del_mar.jpg"></a></li>
+				<li><a href="#img4"><img src="imagenes/flavio.jpg"></a></li>
+				<li><a href="#img5"><img src="imagenes/a_mi_madre.jpg"></a></li>
+				<li><a href="#img6"><img src="imagenes/cantares_gallegos.jpg"></a></li>
+				<li><a href="#img7"><img src="imagenes/contos_da_miña_terra.jpg"></a></li>
+				<li><a href="#img8"><img src="imagenes/ruinas.jpg"></a></li>
+				<li><a href="#img9"><img src="imagenes/botas_azules.jpg"></a></li>
+				<li><a href="#img10"><img src="imagenes/follas_novas.jpg"></a></li>
+				<li><a href="#img11"><img src="imagenes/primer_loco.jpg"></a></li>
+				<li><a href="#img12"><img src="imagenes/orillas_del_sar.jpg"></a></li>
+			</ul>
+
+			<div class="modal" id="img1">
+				<h3>La Flor (1857)</h3>
+				<div class="imagen">
+					<a href="#img12">&#60;</a>
+					<a href="#img2"><img src="imagenes/la_flor.jpg"></a>
+					<a href="#img2">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img2">
+				<h3>Lieders (1858)</h3>
+				<div class="imagen">
+					<a href="#img1">&#60;</a>
+					<a href="#img3"><img src="imagenes/lieders.jpg"></a>
+					<a href="#img3">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img3">
+				<h3>La hija del Mar (1858)</h3>
+				<div class="imagen">
+					<a href="#img2">&#60;</a>
+					<a href="#img4"><img src="imagenes/la_hija_del_mar.jpg"></a>
+					<a href="#img4">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img4">
+				<h3>Flavio (1861)</h3>
+				<div class="imagen">
+					<a href="#img3">&#60;</a>
+					<a href="#img5"><img src="imagenes/flavio.jpg"></a>
+					<a href="#img5">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img5">
+				<h3>A mi madre (1863)</h3>
+				<div class="imagen">
+					<a href="#img4">&#60;</a>
+					<a href="#img6"><img src="imagenes/a_mi_madre.jpg"></a>
+					<a href="#img6">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+
+			<div class="modal" id="img6">
+				<h3>Cantares Gallegos (1863)</h3>
+				<div class="imagen">
+					<a href="#img5">&#60;</a>
+					<a href="#img7"><img src="imagenes/cantares_gallegos.jpg"></a>
+					<a href="#img7">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img7">
+				<h3>Contos da miña terra (1864)</h3>
+				<div class="imagen">
+					<a href="#img6">&#60;</a>
+					<a href="#img8"><img src="imagenes/contos_da_miña_terra.jpg"></a>
+					<a href="#img8">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img8">
+				<h3>Ruinas (1866)</h3>
+				<div class="imagen">
+					<a href="#img7">&#60;</a>
+					<a href="#img9"><img src="imagenes/ruinas.jpg"></a>
+					<a href="#img9">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img9">
+				<h3>El caballero de las botas azules (1867)</h3>
+				<div class="imagen">
+					<a href="#img8">&#60;</a>
+					<a href="#img10"><img src="imagenes/botas_azules.jpg"></a>
+					<a href="#img10">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img10">
+				<h3>Follas Novas (1880)</h3>
+				<div class="imagen">
+					<a href="#img9">&#60;</a>
+					<a href="#img11"><img src="imagenes/follas_novas.jpg"></a>
+					<a href="#img11">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img11">
+				<h3>El primer loco (1881)</h3>
+				<div class="imagen">
+					<a href="#img10">&#60;</a>
+					<a href="#img12"><img src="imagenes/primer_loco.jpg"></a>
+					<a href="#img12">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img12">
+				<h3>En las orillas del Sar (1884)</h3>
+				<div class="imagen">
+					<a href="#img11">&#60;</a>
+					<a href="#img1"><img src="imagenes/orillas_del_sar.jpg"></a>
+					<a href="#img1">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+		</section>
+		
+	</div>
+				
+		</div>
+		<div class="barra-lateral">
+			<div>
+						<h3>Rosalía de Castro</h3>
+							<ul>
+								<li class="menupri"><a class="menu" target="_self" href="index.html">A escritora nacional</a></li>
+								<li class="menupri"><a class="menu" target="_self" href="vida1.html">Vida (1837 - 1870)</a></li>
+								<li class="menupri"><a class="menu" target="_self" href="vida2.html">Vida (1871 - 1891)</a></li>
+								<li class="menupri"><a class="menu" target="_self" href="#">Obra</a></li>
+							</ul>
+
+			</div>
+		</div>
+	</div>
+	<div class="pie">
+		<p>Copyright © 20.. María & Alba</p>
+	</div>
+</body>
+
+</html>
